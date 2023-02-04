@@ -113,7 +113,7 @@ namespace ProgrammingAssignment1
         /// a bite if the egg is cooked
         /// </summary>
         /// <param name="size">size of the bite to take</param>
-        public void TakeBite(float size)
+        public void TakeBite(int size)
         {
             if (size >= amountLeft)
             {
