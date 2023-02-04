@@ -68,7 +68,7 @@ namespace ProgrammingAssignment1
             get
             {
                 // replace the line of code below with correct code
-                return HowCooked.Scrambled;
+                return howCooked;
             }
         }
 
