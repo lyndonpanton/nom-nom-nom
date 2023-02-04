@@ -13,9 +13,9 @@ namespace ProgrammingAssignment1
     {
         #region Fields
 
-        int amountLeft;
-        EggColor color;
-        HowCooked howCooked = HowCooked.NotCooked;
+        private int amountLeft;
+        private EggColor color;
+        private HowCooked howCooked = HowCooked.NotCooked;
 
         #endregion
 
