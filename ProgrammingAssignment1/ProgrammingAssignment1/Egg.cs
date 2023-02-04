@@ -104,7 +104,7 @@ namespace ProgrammingAssignment1
                 howCooked = howToCook;
             } else
             {
-                Console.WriteLine("This egg is already cooked. This egg cannot be cooked again")
+                Console.WriteLine("This egg is already cooked. This egg cannot be cooked again");
             }
         }
 
@@ -125,7 +125,16 @@ namespace ProgrammingAssignment1
         /// <param name="color">color to dye the egg</param>
         public void Dye(EggColor color)
         {
-
+            if (color == EggColor.White)
+            {
+                color = EggColor.Blue;
+            } else if (color == EggColor.Blue)
+            {
+                Console.WriteLine("Egg has already been dyed");
+            } else
+            {
+                Console.WriteLine("Egg cannot be dyed the given colour");
+            }
         }
 
         #endregion
