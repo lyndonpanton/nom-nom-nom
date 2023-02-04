@@ -80,6 +80,11 @@ namespace ProgrammingAssignment1
             get
             {
                 // replace the line of code below with correct code
+                if (howCooked != HowCooked.NotCooked)
+                {
+                    return true;
+                }
+
                 return false;
             }
         }
