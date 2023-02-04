@@ -99,7 +99,13 @@ namespace ProgrammingAssignment1
         /// <param name="howToCook">how the egg should be cooked</param>
         public void Cook(HowCooked howToCook)
         {
-
+            if (!IsCooked)
+            {
+                howCooked = howToCook;
+            } else
+            {
+                Console.WriteLine("This egg is already cooked. This egg cannot be cooked again")
+            }
         }
 
         /// <summary>
