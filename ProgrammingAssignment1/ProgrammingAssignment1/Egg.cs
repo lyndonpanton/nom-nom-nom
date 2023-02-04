@@ -125,10 +125,10 @@ namespace ProgrammingAssignment1
         /// <param name="color">color to dye the egg</param>
         public void Dye(EggColor color)
         {
-            if (color == EggColor.White)
+            if (this.color == EggColor.White && color == EggColor.Blue)
             {
-                color = EggColor.Blue;
-            } else if (color == EggColor.Blue)
+                this.color = color;
+            } else if (this.color == EggColor.Blue)
             {
                 Console.WriteLine("Egg has already been dyed");
             } else
