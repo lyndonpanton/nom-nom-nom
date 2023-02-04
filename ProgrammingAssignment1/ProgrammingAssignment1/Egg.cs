@@ -119,7 +119,7 @@ namespace ProgrammingAssignment1
             {
                 amountLeft = 0;
             }
-            else if (amountLeft != 0)
+            else if (amountLeft != 0 && this.IsCooked)
             {
                 amountLeft -= size;
             }
