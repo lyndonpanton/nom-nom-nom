@@ -113,17 +113,24 @@ namespace ProgrammingAssignment1
         /// a bite if the egg is cooked
         /// </summary>
         /// <param name="size">size of the bite to take</param>
-        public void TakeBite(int size)
+        public void TakeBite(float size)
         {
-
+            if (size >= amountLeft)
+            {
+                amountLeft = 0;
+            }
+            else if (amountLeft != 0)
+            {
+                amountLeft -= size;
+            }
         }
 
-        /// <summary>
-        /// Dyes the egg the given color. Only white eggs can be dyed,
-        /// and eggs can only be dyed blue
-        /// </summary>
-        /// <param name="color">color to dye the egg</param>
-        public void Dye(EggColor color)
+            /// <summary>
+            /// Dyes the egg the given color. Only white eggs can be dyed,
+            /// and eggs can only be dyed blue
+            /// </summary>
+            /// <param name="color">color to dye the egg</param>
+            public void Dye(EggColor color)
         {
             if (this.color == EggColor.White && color == EggColor.Blue)
             {
